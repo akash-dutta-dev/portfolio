@@ -1,0 +1,417 @@
+@font-face {
+    font-family: 'Sacramento';
+    src: url('./fonts/Sacramento-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'ProxiNova-Bold';
+    src: url('./fonts/ProxiNova-Bold.otf') format('truetype');
+}
+@font-face {
+    font-family: 'ProxiNova-Regular';
+    src: url('./fonts/ProxiNova-Regular.otf') format('truetype');
+}
+@font-face {
+    font-family: 'ProxiNova-Light';
+    src: url('./fonts/ProxiNova-Light.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'ProxiNova-LightAlt';
+  src: url('./fonts/ProxiNova-LightAlt.otf') format('truetype');
+}
+body {
+  margin-bottom: 0px;
+}
+.container{
+    display: flex;
+    flex-direction: column ;
+}
+.section1{
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+}
+
+.animationHolder{
+    display: flex;
+    justify-content: center;
+}
+
+.animationHolder img {
+    height: 21rem;
+}
+.bgImage{
+  position: absolute;
+    z-index: -1;
+}
+span.name {
+    font-family:'Sacramento',cursive !important;
+    /* text-transform:none; */
+    font-weight:400;
+    font-size:6rem;
+    justify-content: center
+}
+
+.typingText{
+    font-family: 'ProxiNova-Bold';
+    font-size: 3rem;
+}
+.typingText-iAm{
+    font-family: 'ProxiNova-Regular';
+    font-size: 3rem;
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'ProxiNova-Regular';
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 2.5rem;
+  }
+
+  .coffeeButton {
+    margin-top: 2rem;
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+  }
+  
+  .coffeeButton:hover {
+    background-color: #555555;
+    color: white;
+  }
+
+  .section2{
+    display: flex;
+    flex-direction: column;
+    margin-top: 6rem;
+    background-color: bisque;
+  }
+  .aboutSection{
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    background-color: bisque;
+    padding: 4rem;
+  }
+  .aboutSectionImage {
+    display: flex;
+    justify-content: center;
+  }
+  .aboutSectionSocialMedia{
+    display: flex;
+    gap: 0.6rem;
+  }
+  .aboutSectionSocialMedia img{
+    height: 3rem;
+  }
+
+  .leftPart{
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+  }
+  .leftPart .aboutSectionImage img{
+    height: 12rem;
+    border-radius: 7.5rem;
+  }
+  .rightPart{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+
+  .rightPart span{
+    font-family: 'ProxiNova-Light';
+    font-size: 5rem;
+    letter-spacing: 0.7rem;
+
+  }
+
+  .rightPart .aboutMeDesc{
+    font-family: 'ProxiNova-Light';
+    font-size: 1.3rem;
+    color: #838383;
+    letter-spacing: 0.2rem;
+    line-height: 2.5rem;
+  }
+
+  .numbersSection{
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+    padding-bottom: 2.1rem;
+  }
+
+  .numSecItem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+
+    .numSecNumber{
+      font-size: 2.8rem;
+    }
+    .numSecTag{
+      font-size: 1.3rem;
+    }
+  }
+ 
+  .section3{
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+  .section3 span {
+    font-family: 'ProxiNova-Light';
+    font-size: 5rem;
+    letter-spacing: 0.7rem;
+  }
+  .skillChart{
+    display: flex;
+    justify-content: center;
+    gap: 9rem;
+  }
+
+  .section4{
+    font-family: 'ProxiNova-Light';
+    display: flex;
+    flex-direction: column;
+    margin-top: 6rem;
+    padding: 4rem;
+    background-color: indianred;
+    align-items:center ;
+  }
+  .section4 span{
+    font-family: 'ProxiNova-Light';
+    font-size: 5rem;
+    letter-spacing: 0.7rem;
+
+  }
+
+  
+.workCard {
+  position: relative;
+  max-width : 254px;
+  height : 180px;  
+  background-color : #fff;
+  margin : 30px 10px;
+  
+  display : flex;
+  flex-direction : column;
+  box-shadow : 0 5px 20px rgba(0,0,0,0.5);
+  transition : 0.3s ease-in-out;
+  border-radius : 15px;
+}
+ .workCard:hover {
+  height : 320px;    
+}
+
+
+ .workCard .workImage {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  position : relative;
+  width : 212px;
+  height : 260px;
+  
+  top: -6%;
+  left: 20px;
+  box-shadow : 0 5px 20px rgba(0,0,0,0.2);
+  z-index : 1;
+}
+
+.workCard .workImage img {
+  max-width : 100%;
+  height: 9.6rem;
+  border-radius : 15px;
+}
+
+ .workCard .workContent {
+  /* font-family: 'ProxiNova-LightAlt'; */
+  position : relative;
+  top : -140px;
+  padding : 10px 15px;
+  color : #111;
+  text-align : center;
+  
+  visibility : hidden;
+  opacity : 0;
+  transition : 0.3s ease-in-out;
+    
+}
+
+ .workCard:hover .workContent {
+   margin-top : 60px;
+   visibility : visible;
+   opacity : 1;
+   transition-delay: 0.2s;
+  
+}
+.workHeader {
+  font-family: 'ProxiNova-Light';
+  justify-content: center;
+  position: relative;
+  display: flex;
+  top: -1%;
+  left: 0%;
+
+}
+
+.workCard:hover .workHeader{
+  display : none;
+}
+
+.workSection{
+  /* display: flex;
+  flex-wrap: wrap;
+  gap: 7rem;
+  justify-content: space-evenly;
+  margin-top: 4rem; */
+  width: 1345px;
+}
+
+.section5{
+  font-family: 'ProxiNova-Light';
+  display: flex;
+  flex-direction: column;
+  padding: 4rem;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 0px;
+}
+
+.sec5PartOne{
+  justify-content: center;
+  flex-direction: column;
+   display: flex;
+   align-items: center;
+   width: 60%;
+}
+
+.sec5PartOne span {
+  font-family: 'ProxiNova-Light';
+    font-size: 5rem;
+    letter-spacing: 0.7rem;
+}
+
+.sec5PartOne .connectText {
+  font-family: 'ProxiNova-Light';
+  font-size: 1.3rem;
+  color: #838383;
+  letter-spacing: 0.2rem;
+  line-height: 2.5rem;
+}
+.sec5PartTwo {
+  width: 60%;
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.sec5PartTwo span{
+  width: 60%;
+
+  font-size: 3rem;
+    color: #acacac;
+    letter-spacing: 0.3rem;
+}
+
+.sec5PartThree {
+  margin-top: 3.8rem;
+  width: 60%;
+}
+
+.sec5PartThree{
+  display: flex;
+}
+
+.sec5PartThreeCopywrite{
+  width: 30%;
+  display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.sec5PartThreeCopywrite .class1{
+  font-family: sans-serif;
+  font-weight: bolder;
+  letter-spacing: 0.1rem;
+  color: #acacac;
+}
+.sec5PartThreeCopywrite .class2{
+  font-family: sans-serif;
+  letter-spacing: 0.1rem;
+  color: #acacac;
+  line-height: 1.6;
+}
+
+.sec5PartThreeName{
+  width: 30%;
+  margin-left: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sec5PartThreeName .class3{
+  font-family: 'Sacramento';
+  font-size: 4rem;
+  color: indianred;
+  line-height: 4.1rem;
+}
+
+.sec5PartThreeName .class4{
+  font-family: sans-serif;
+  letter-spacing: 0.1rem;
+  line-height: 1.6;
+}
+
+.sec5PartThreeMedia{
+  width: 34%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  gap: 0.5rem;
+}
+
+.sec5PartThreeMedia .class5 {
+  font-family: sans-serif;
+  letter-spacing: 0.1rem;
+  color: #acacac;
+  line-height: 1.6;
+  font-size: 1.2rem;
+}
+.sec5PartThreeMedia .class6 {
+  gap: 1rem;
+  justify-content: center;
+}
+.class6 a img {
+  height: 2.5rem;
+}
+.sec5PartFour{
+  margin-top: 3.4rem;
+  position: relative;
+  top: 10px;
+}
+
+.nml{
+  font-family: sans-serif !important; 
+  font-size: large !important;
+  letter-spacing: 0 !important;
+  margin-top: 0px !important;
+  position: relative !important;
+  top: 2px !important;
+}

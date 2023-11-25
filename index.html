@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" type="text/css" href="./style.css">
+     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.5.0/slick.css">
+     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.5.0/slick-theme.css">
+     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/modernizr.custom.js"></script>
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/jquery.slick/1.5.0/slick.min.js"></script>
+
+     <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+     
+     <script src="./script.js"></script>
+    <title>Akash Dutta | SDE</title>
+
+</head>
+<body>
+    <div class="container">
+        <div class="section1">
+            <img src="./assets/rocket_bg.png" class="bgImage">
+            <div class="animationHolder">
+                <img src="./assets/rocket.gif">
+            </div>
+            <span class="name">Akash Dutta</span>
+            <span class="typingText-iAm">I am <span class="typingText"></span></span>
+            <button class="button coffeeButton">Lets have a cup of coffee.</button>
+        </div>
+        <div class="section2">
+            <div class="aboutSection">
+                <div class="leftPart">
+                    <div class="aboutSectionImage">
+                        <img src="./assets/mypic.jpg" alt="">
+                    </div>
+                    <div class="aboutSectionSocialMedia">
+                        <a href="mailto:akash.dutta9830489799@gmail.com?subject='Lets connect over a coffee.'" target="_blank"><img src="./assets/gmail.png" alt=""></a>
+                        <a href="https://www.linkedin.com/in/akash-dutta/" target="_blank"><img src="./assets/linkedin.png" alt=""></a>
+                        <a href="https://wa.me/9840355935" target="_blank"><img src="./assets/whatsapp.png" alt=""></a>
+                        <a href="https://www.instagram.com/akash_dutta97/" target="_blank"><img src="./assets/instagram.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="rightPart">
+                    <span class="aboutMeTitle">About me</span>
+                    <div class="aboutMeDesc">
+                        
+                        Hi I am Akash Dutta, a 26 year old Full Stack Engineer, Designer, and Competitive coder living in Bangalore, India. 
+                        I am a Computer Science Engineer, currently working with awesome folks at Wingify.
+                        Have a look at my Github repos, skills or just connect with me on LinkedIn. 
+                        I am always excited to do business with like minded people, lets discuss over coffee.
+                    </div>
+                </div>
+                
+            </div>
+            <div class="numbersSection">
+                <div class="numSecItem">
+                    <span class="numSecNumber">120 783</span>
+                    <span class="numSecTag">lines of code*</span>
+                </div>
+                <div class="numSecItem">
+                    <span class="numSecNumber">5 073</span>
+                    <span class="numSecTag">no. of commits*</span>
+                </div>
+                <div class="numSecItem">
+                    <span class="numSecNumber">572</span>
+                    <span class="numSecTag">working apis*</span>
+                </div>
+                <div class="numSecItem">
+                    <span class="numSecNumber">23</span>
+                    <span class="numSecTag">projects completed</span>
+                </div>
+            </div>
+        </div>
+        <div class="section3">
+            <span>Skills</span>
+            <div class="skillChart">
+                <canvas id="frontEndChart" style="width:80%;max-width:30rem"></canvas>
+                <canvas id="backendChart" style="width:100%;max-width:30rem"></canvas>
+                <canvas id="interestChart" style="width:100%;max-width:31rem"></canvas>
+            </div>
+        </div>
+        <div class="section4">
+            <span>Connect me if you want these </span>
+            <div class="workSection">
+                <div class="slideContents">
+                    <div class="slideContent" style="display: flex; flex-wrap: wrap;gap: 2rem;justify-content: space-evenly; margin-top: 4rem">
+                        <div class = workCard>
+                            <div class = workImage>
+                                <img src ="assets/work/full-stack.gif">
+                            </div>
+                            <div class="workHeader">Full Stack Development</div>
+                            <div class = workContent>
+                                <br><br><br>
+                                <p>Have a great idea in mind, that you want to see in reality. Lets meet over a coffee. Send me a Hi.</p>
+                            </div>
+                        </div>  
+                        <div class = workCard>
+                            <div class = workImage>
+                                <img src ="assets/work/website.gif">
+                            </div>
+                            <div class="workHeader">Website Development</div>
+                            <div class = workContent>
+                                <br><br><br>
+                                <p>Want to build a impressing portfolio to display your skills or showcase your business online. Its your website that reach more places before you, it creates the first impression for you. Connect with me to build a stunning websites.</p>
+                            </div>
+                        </div>  
+                        <div class = workCard>
+                            <div class = workImage>
+                                <img src ="assets/work/frontend.gif">
+                            </div>
+                            <div class="workHeader">Frontend Design</div>
+                            <div class = workContent>
+                                <br><br><br>
+                                <p>Do you already have a running app and you want to add some frontend part like calendar, animations, icons or anything. We can discuss </p>
+                            </div>
+                        </div> 
+                        <div class = workCard>
+                            <div class = workImage>
+                                <img src ="assets/work/backend.gif">
+                            </div>
+                            <div class="workHeader">Backend Developement</div>
+                            <div class = workContent>
+                                <br><br><br>
+                                <p>Build a strong distributed, fault tolerant backend that will scale easily with increasing users.</p>
+                            </div>
+                        </div>  
+                        <div class = workCard>
+                            <div class = workImage>
+                                <img src ="assets/work/database.gif">
+                            </div>
+                            <div class="workHeader">Database Schema</div>
+                            <div class = workContent>
+                                <br><br><br>
+                                <p>Want to know which database suits more to your app. A well designed databse schema make your app more flexible and space efficient. </p>
+                            </div>
+                        </div> 
+                        <div class = workCard>
+                            <div class = workImage>
+                                <img src ="assets/work/form.gif">    
+                            </div>
+                            <div class="workHeader">Forms</div>
+                            <div class = workContent>
+                                <br><br><br>
+                                <p>Create a well designed interactive UI login<span class="nml">/</span>signup forms that keep the user engaged. A great signup form can result into 2x more successful signups. </p>
+                            </div>
+                        </div>  
+                        <div class = workCard>
+                            <div class = workImage>
+                                <img src ="assets/work/scrolling.gif">
+                            </div>
+                            <div class="workHeader">Infinite Scrolling</div>
+                            <div class = workContent>
+                                <br><br><br>
+                                <p>In your app, is there any API that fetches more than 25 rows in a single call? If yes, Congratulations, your app is growing and also its the perfect time to implement Infinite Scrolling. This not only reduces bandwidth but also helps to hook users.</p>
+                            </div>
+                        </div>  
+                        <div class = workCard>
+                            <div class = workImage>
+                                <img src ="assets/work/third-party.gif">
+                            </div>
+                            <div class="workHeader">Third Party Integration</div>
+                            <div class = workContent>
+                                <br><br><br>
+                                <p>Integrating any third party application can be a headache to developers sometime. Since, it involves reading a big raw text documentations and then implementation. Leave this task to me.</p>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="slideContent"  style="display: flex; flex-wrap: wrap;gap: 2rem;justify-content: space-evenly; margin-top: 4rem;">
+                        <!-- WorkPart2 -->
+                        <div class = workCard>
+                            <div class = workImage>
+                                <img src ="assets/work/system-design.gif">
+                            </div>
+                            <div class="workHeader">System Design</div>
+                            <div class = workContent>
+                                <br><br><br>
+                                <p>You have a idea and you are a developer as well, but not sure which system pattern will work best for your project. <br> 
+                                    Get an opinion now. </p>
+                            </div>
+                        </div>  
+                        <div class = workCard>
+                            <div class = workImage>
+                                <img src ="assets/work/custom-feature.gif">
+                            </div>
+                            <div class="workHeader">Custom Feature</div>
+                            <div class = workContent>
+                                <br><br><br>
+                                <p>You have a application running in production with real time users. <br> 
+                                    Want to add custom feature to enhance user experience ?</p>
+                            </div>
+                        </div>  
+                        <div class = workCard>
+                            <div class = workImage>
+                                <img src ="assets/work/hosting.gif">
+                            </div>
+                            <div class="workHeader">Hosting</div>
+                            <div class = workContent>
+                                <br><br><br>
+                                <p>You have a application ready on your localhost. But not sure where to host your app. <br>
+                                    This is quite common since there are lots of hosting alternatives out there. <br>
+                                    Want to know which platform suits you the best ?
+                                </p>
+                            </div>
+                        </div>  
+                        <div class = workCard>
+                            <div class = workImage>
+                                <img src ="assets/work/cloud-transfer.gif">
+                            </div>
+                            <div class="workHeader">Cloud Migration</div>
+                            <div class = workContent>
+                                <br><br><br>
+                                <p>Want to migrate from GCP to AWS or vice versa ? <br>
+                                    Migrating cloud often comes with the risk of system compatibility and data backups while the keeping the user experience smooth. <br> 
+                                    Connect with me to discuss more.
+                                </p>
+                            </div>
+                        </div> 
+                        <div class = workCard>
+                            <div class = workImage>
+                                <img src ="assets/work/newsfeed.gif">
+                            </div>
+                            <div class="workHeader">Feeds Generation</div>
+                            <div class = workContent>
+                                <br><br><br>
+                                <p>Generate feeds or any queue based timeline for your app, if its generating large number of posts each day.
+                                </p>
+                            </div>
+                        </div>  
+                        <div class = workCard>
+                            <div class = workImage>
+                                <img src ="assets/work/tech-stack-migration.gif">
+
+                            </div>
+                            <div class="workHeader">Tech Stack Migration</div>
+                            <div class = workContent>
+                                <br><br><br>
+                                <p>As the application grows, technical requirments changes as new features kicks in. To cope up with the requirments, sometimes one might need to migrate their tech stack to a better one.
+
+                                </p>
+                            </div>
+                        </div>  
+                        <div class = workCard>
+                            <div class = workImage>
+                                <img src ="assets/work/critical-bug.gif">
+                            </div>
+                            <div class="workHeader">Critical issue debugging</div>
+                            <div class = workContent>
+                                <br><br><br>
+                                <p>Sometimes there can be low probable critical bugs that doest affect user experience but stays in the app for a long time. Its always a good idea to get rid of these issue.</p>
+                            </div>
+                        </div>
+                        <div class = workCard>
+                            <div class = workImage>
+                                <img src ="assets/work/pipeline.gif">
+                            </div>
+                            <div class="workHeader">Pipeline Setup</div>
+                            <div class = workContent>
+                                <br><br><br>
+                                <p>Tired of manual deployment ? Never waste your precious time on this. Setup auto deployment whenever your pull request gets approved.</p>
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="slideContent"  style="display: flex; flex-wrap: wrap;gap: 2rem;justify-content: space-evenly; margin-top: 4rem;">
+                        <!-- WorkPart3 -->
+                        <div class = workCard>
+                            <div class = workImage>
+                                <img src ="assets/work/ai.gif">
+                            </div>
+                            <div class="workHeader">AI Integration</div>
+                            <div class = workContent>
+                                <br><br><br>
+                                <p>There will be no time better than now to use AI on your app. If there is a <span class="nml">&lt;</span>textarea<span class="nml">&gt;</span> or <span class="nml">&lt;</span>input image<span class="nml">&gt;</span> in any place inside your app. Congrats, there is a great potential to integrate AI for content generation that your user will surely love.</p>
+                            </div>
+                        </div> 
+                        <div class = workCard>
+                            <div class = workImage>
+                                <img src ="assets/work/responsive.gif">
+                            </div>
+                            <div class="workHeader">Responsive Website</div>
+                            <div class = workContent>
+                                <br><br><br>
+                                <p>Around <span class="nml">56%</span> of internet user uses smartphone, <span class="nml">45%</span> uses desktop and the remaining uses a tablet. So, it quite a wide range of user you will be dealing with, a responsive ui will always make your site stand out from the crowd.</p>
+                            </div>
+                        </div> 
+                        <div class = workCard>
+                            <div class = workImage>
+                                <img src ="assets/work/chatting.gif">
+                            </div>
+                            <div class="workHeader">Real Time Communication, Chatting
+                            </div>
+                            <div class = workContent>
+                                <br><br><br>
+                                <p>Realtime communication, such as chatting or video calls, is becoming increasingly common in every app, even if its not purposefully built for that. Even the simplest websites, like a todo app, provide chatting features with teammates. Its better to add it to your site too.</p>
+                            </div>
+                        </div> 
+                        <div class = workCard>
+                            <div class = workImage>
+                                <img src ="assets/work/searching.gif">
+                            </div>
+                            <div class="workHeader">Searching</div>
+                            <div class = workContent>
+                                <br><br><br>
+                                <p>If your database contains for than 100k<span class="nml">+</span> rows, your can consider implementing more robust searching techniques</p>
+                            </div>
+                        </div> 
+                        <div class = workCard>
+                            <div class = workImage>
+                                <img src ="assets/work/payment.gif">
+                            </div>
+                            <div class="workHeader">Payment Gateway</div>
+                            <div class = workContent>
+                                <br><br><br>
+                                <p>Does your site accept payments ? Want to integrate a payment provider ?</p>
+                            </div>
+                        </div> 
+                        <div class = workCard>
+                            <div class = workImage>
+                                <img src ="assets/work/mails.gif">
+                            </div>
+                            <div class="workHeader">Automated Emails</div>
+                            <div class = workContent>
+                                <br><br><br>
+                                <p>Send bulk emails to potential customers.</p>
+                            </div>
+                        </div> 
+                    </div>
+                </div> 
+            </div>
+        </div>
+        <div class="section5">
+            <div class="sec5PartOne">
+                <span>Coffee with me ?</span>
+                <div class="connectText">I am always excited to work on some awesome projects, message me and lets discuss over coffee.</div>
+            </div>
+            <div class="sec5PartTwo" style="font-family:Arial, Helvetica, sans-serif">
+                <form id="theForm" class="simform">
+					<div class="simform-inner">
+						<ol class="questions">
+							<li>
+								<span style="width: 100%;font-size: xx-large;"><label for="q1">Write a message for me below</label></span>
+								<input id="q1" name="q1" type="text"/>
+							</li>
+							<li>
+								<span style="width: 100%;font-size: xx-large;"><label for="q2">Your name</label></span>
+								<input id="q2" name="q2" type="text"/>
+							</li>
+							<li>
+								<span style="width: 100%;font-size: xx-large;"><label for="q3">Your email or phone number</label></span>
+								<input id="q3" name="q3" type="text"/>
+							</li>
+						</ol><!-- /questions -->
+						<button class="submit" type="submit">Send answers</button>
+						<div class="controls">
+							<button class="next"><img src="./assets/right-arrow.png"></button>
+							<div class="progress"></div>
+							<span class="number">
+								<span class="number-current" style="font-size: medium;"></span>
+								<span class="number-total" style="font-size: medium;"></span>
+							</span>
+							<span class="error-message"></span>
+						</div><!-- / controls -->
+					</div><!-- /simform-inner -->
+					<span class="final-message"></span>
+				</form><!-- /simform -->
+            </div>
+            <div class="sec5PartThree">
+                <div class="sec5PartThreeCopywrite">
+                    <span class="class1">No  copyright © issues.</span>
+                    <span class="class2">Feel free to copy. If you need any help, ping me ! <br>Inspired from Akshay Saini !</span>
+                </div>
+                <div class="sec5PartThreeName">
+                    <span class="class3">Akash Dutta</span>
+                    <span class="class4">Made with ❤️ in India</span>
+                </div>
+                <div class="sec5PartThreeMedia">
+                    <span class="class5">You can find me everywhere</span>
+                    <div class="aboutSectionSocialMedia class6">
+                        <a href="mailto:akash.dutta9830489799@gmail.com?subject='Lets connect over a coffee.'" target="_blank"><img src="./assets/gmail.png" alt=""></a>
+                        <a href="https://www.linkedin.com/in/akash-dutta/" target="_blank"><img src="./assets/linkedin.png" alt=""></a>
+                        <a href="https://wa.me/9840355935" target="_blank"><img src="./assets/whatsapp.png" alt=""></a>
+                        <a href="https://www.instagram.com/akash_dutta97/" target="_blank"><img src="./assets/instagram.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="sec5PartFour">
+                <img src="./assets/footer.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <script src="js/classie.js"></script>
+		<script src="js/stepsForm.js"></script>
+		<script>
+			var theForm = document.getElementById( 'theForm' );
+                        //disable form autocomplete
+                        theForm.setAttribute( "autocomplete", "off" );
+
+			new stepsForm( theForm, {
+				onSubmit : function( form ) {
+					// hide form
+					classie.addClass( theForm.querySelector( '.simform-inner' ), 'hide' );
+
+					/*
+					form.submit()
+					or
+					AJAX request (maybe show loading indicator while we don't have an answer..)
+					*/
+
+					// let's just simulate something...
+					var messageEl = theForm.querySelector( '.final-message' );
+					messageEl.innerHTML = 'Thank you! I\'ll be in touch.';
+					classie.addClass( messageEl, 'show' );
+				}
+			} );
+		</script>
+</body>
+</html>
