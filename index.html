@@ -32,7 +32,7 @@
             </div>
             <span class="name">Akash Dutta</span>
             <span class="typingText-iAm">I am <span class="typingText"></span></span>
-            <button class="button coffeeButton">Lets have a cup of coffee.</button>
+            <button class="button coffeeButton" id="scrollToBottomBtn">Lets have a cup of coffee.</button>
         </div>
         <div class="section2">
             <div class="aboutSection">
@@ -61,16 +61,16 @@
             </div>
             <div class="numbersSection">
                 <div class="numSecItem">
-                    <span class="numSecNumber">120 783</span>
-                    <span class="numSecTag">lines of code*</span>
+                    <span class="numSecNumber">18 783</span>
+                    <span class="numSecTag">lines of code</span>
                 </div>
                 <div class="numSecItem">
-                    <span class="numSecNumber">5 073</span>
-                    <span class="numSecTag">no. of commits*</span>
+                    <span class="numSecNumber">1 073</span>
+                    <span class="numSecTag">no. of commits</span>
                 </div>
                 <div class="numSecItem">
-                    <span class="numSecNumber">572</span>
-                    <span class="numSecTag">working apis*</span>
+                    <span class="numSecNumber">72</span>
+                    <span class="numSecTag">working apis</span>
                 </div>
                 <div class="numSecItem">
                     <span class="numSecNumber">23</span>
@@ -81,16 +81,80 @@
         <div class="section3">
             <span>Skills</span>
             <div class="skillChart">
-                <canvas id="frontEndChart" style="width:80%;max-width:30rem"></canvas>
-                <canvas id="backendChart" style="width:100%;max-width:30rem"></canvas>
-                <canvas id="interestChart" style="width:100%;max-width:31rem"></canvas>
+                <canvas id="frontEndChart" class="skillChartStyle"></canvas>
+                <canvas id="backendChart" class="skillChartStyle"></canvas>
+                <canvas id="interestChart" class="skillChartStyle"></canvas>
             </div>
         </div>
         <div class="section4">
-            <span>Connect me if you want these</span>
+            <span>Personal projects</span>
             <div class="workSection">
                 <div class="slideContents">
                     <div class="slideContent" style="display: flex; flex-wrap: wrap;gap: 2rem;justify-content: space-evenly; margin-top: 4rem">
+                        <div class = workCard>
+                            <div class = workImage>
+                                <img src ="assets/projects/socialBeing.png">
+                            </div>
+                            <div class="workHeader">SocialBeing</div>
+                            <div class = workContent>
+                                <br><br><br>
+                                <p>A simple lightweight social media app, where user can post, like, comment, private chats with other. Built with React, Express and Node. <br>Project link <a href="https://github.com/akash-dutta-dev/socialbeing" target="_blank">here.</a></p>
+                            </div>
+                        </div>  
+                        <div class = workCard>
+                            <div class = workImage>
+                                <img src ="assets/projects/socialPoolz.png">
+                            </div>
+                            <div class="workHeader">SocialPoolz</div>
+                            <div class = workContent>
+                                <br><br><br>
+                                <p>Socialpoolz is a QnA website hosted within University where students can ask questions to their respectiver teacher. Also students can like, comments, follow topics, follow other students, get real time notifications, messaging and much more. Built with HTML, CSS, Javascript, Bootstrap, JQuery, PHP, MySQL. <br> Project link <a href="https://github.com/akash-dutta-dev/Socialpoolz" target="_blank">here.</a></p>
+                            </div>
+                        </div>
+                        <div class = workCard>
+                            <div class = workImage>
+                                <img src ="assets/projects/cricket.JPG">
+                            </div>
+                            <div class="workHeader">Cricket Winner Prediction</div>
+                            <div class = workContent>
+                                <br><br><br>
+                                <p>A Machine Learning Model to using K-nearest algorithm along with Linear Regression that can predict the IPL match outcome with up to 85% accuracy, provided with data from previous matches. Presented in Reliance Jio Machine Learning competition in Techgigs Mumbai. <br>Project link <a href="https://akashduttablogs.blogspot.com/2019/09/heading.html" target="_blank">here.</a></p>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="slideContent" style="display: flex; flex-wrap: wrap;gap: 2rem;justify-content: space-evenly; margin-top: 4rem">
+                        <div class = workCard>
+                            <div class = workImage>
+                                <img src ="assets/projects/employeeManagementSystem.png">
+                            </div>
+                            <div class="workHeader">Leave Management System</div>
+                            <div class = workContent>
+                                <br><br><br>
+                                <p>Designed a Leave Management portal where employees can apply for leaves and track their status, along with visual analytics for the managers to track their employee's activity. Built with React, Spring, Java.<br>Project link <a href="https://github.com/akash-dutta-dev/LeaveManagementSystem-1" target="_blank">here.</a></p>
+                            </div>
+                        </div>  
+                        <div class = workCard>
+                            <div class = workImage>
+                                <img src ="assets/projects/BlogApp.jpg">
+                            </div>
+                            <div class="workHeader">Blogger App</div>
+                            <div class = workContent>
+                                <br><br><br>
+                                <p>Blogger App is a blogging app. One can use it to publish blogs, write thoughts, or self help note for later use. A simple lightweight app, fun to use. Built with React, Express, Node and MongoDB<br>Project link <a href="https://github.com/akash-dutta-dev/BloggerApp" target="_blank">here.</a></p>
+                            </div>
+                        </div>
+                        <div class = workCard>
+                            <div class = workImage>
+                                <img src ="assets/projects/TodoApp.jpg">
+                            </div>
+                            <div class="workHeader">Todo App</div>
+                            <div class = workContent>
+                                <br><br><br>
+                                <p>A simple todo app with all the functionality. You can add tasks, set due dates, and mark them as done when you complete them. Built with React, Express, Node and MySQL. <br>Project link <a href="https://github.com/akash-dutta-dev/todo-app" target="_blank">here.</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="slideContent" style="display: flex; flex-wrap: wrap;gap: 2rem;justify-content: space-evenly; margin-top: 4rem">
                         <div class = workCard>
                             <div class = workImage>
                                 <img src ="assets/work/full-stack.gif">
@@ -173,7 +237,7 @@
                         </div>  
                     </div>
                     <div class="slideContent"  style="display: flex; flex-wrap: wrap;gap: 2rem;justify-content: space-evenly; margin-top: 4rem;">
-                        <!-- WorkPart2 -->
+                         WorkPart2 -
                         <div class = workCard>
                             <div class = workImage>
                                 <img src ="assets/work/system-design.gif">
@@ -268,7 +332,7 @@
                         </div>    
                     </div>
                     <div class="slideContent"  style="display: flex; flex-wrap: wrap;gap: 2rem;justify-content: space-evenly; margin-top: 4rem;">
-                        <!-- WorkPart3 -->
+                        //WorkPart3 
                         <div class = workCard>
                             <div class = workImage>
                                 <img src ="assets/work/ai.gif">
@@ -330,14 +394,29 @@
                                 <p>Send bulk emails to potential customers.</p>
                             </div>
                         </div> 
-                    </div>
+                    </div> -->
                 </div> 
             </div>
         </div>
-        <div class="section5">
+        <div class="section5" id="section5">
             <div class="sec5PartOne">
                 <span>Coffee with me ?</span>
-                <div class="connectText">I am always excited to work on some awesome projects, message me and lets discuss over coffee.</div>
+                <div class="connectText">I am always excited to work on some awesome projects, message me and lets discuss over coffee.
+                    <br>Let's discuss the next big thing over a meet: <a href="https://cal.com/akash-dutta" target="_blank">https://cal.com/akash-dutta</a>
+                    <br>Or maybe just send me a hello here: <a href="mailto:akash.dutta9830489799@gmail.com?subject='Lets connect over a coffee.'" target="_blank">akash.dutta9830489799@gmail.com</a> / +91 9840355935
+                </div>
+                <!-- <div class="contactInfo">
+                    <div class="contactInfoOne">
+                        Meet: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://cal.com/akash-dutta" target="_blank">https://cal.com/akash-dutta</a>
+                        
+                    </div>
+                    <div class="contactInfoTwo">
+                        Email: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;akash.dutta9830489799@gmail.com
+                    </div>
+                    <div class="contactInfoThree">
+                        Contact: &nbsp;&nbsp;&nbsp;+91 9840355935 / +91 9830489799
+                    </div>
+                </div> -->
             </div>
             <div class="sec5PartTwo" style="font-family:Arial, Helvetica, sans-serif">
                 <form id="theForm" class="simform">
@@ -390,7 +469,7 @@
                 </div>
             </div>
             <div class="sec5PartFour">
-                <img src="./assets/footer.jpg" alt="">
+                <img src="./assets/footer.jpg" alt="" class="sec5PartFourImg">
             </div>
         </div>
     </div>

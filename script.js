@@ -47,8 +47,39 @@ $(document).ready(function () {
 
 // Link to site -https://www.w3schools.com/ai/ai_chartjs.asp
 document.addEventListener('DOMContentLoaded', function() {
-  var frontendXValues = ["Javascript", "React", "HTML", "CSS", ""];
-  var frontendYValues = [9, 9 , 8, 8, 0];
+  document.getElementById('scrollToBottomBtn').addEventListener('click', function() {
+    // Scroll to the bottom of the page
+    //scrollToBottom();
+    scrollToElement("section5");
+  });
+  function scrollToElement(elementId) {
+    const targetElement = document.getElementById(elementId);
+
+    if (targetElement) {
+        const duration = 2500; 
+        const targetPosition = targetElement.offsetTop;
+        const currentScrollPosition = window.scrollY;
+        const distanceToScroll = targetPosition - currentScrollPosition;
+        const startTime = performance.now();
+        
+        function scrollStep(timestamp) {
+            const progress = timestamp - startTime;
+            const easeInOutQuad = progress => progress < 0.5 ? 2 * progress * progress : -1 + (4 - 2 * progress) * progress;
+
+            window.scrollTo(0, currentScrollPosition + easeInOutQuad(progress / duration) * distanceToScroll);
+
+            if (progress < duration) {
+                window.requestAnimationFrame(scrollStep);
+            }
+        }
+
+        window.requestAnimationFrame(scrollStep);
+    }
+  }
+
+
+  var frontendXValues = ["Javascript", "React", "HTML", "CSS", "MaterialUI", ""];
+  var frontendYValues = [9, 9 , 8, 8, 7,0];
   var frontendBarColors = "orange";
 
   new Chart(document.getElementById("frontEndChart"), {

@@ -41,6 +41,8 @@ body {
     height: 21rem;
 }
 .bgImage{
+  width: 100%;
+  max-width: 2200px;
   position: absolute;
     z-index: -1;
 }
@@ -126,7 +128,7 @@ span.name {
   .rightPart{
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 100%;
   }
 
   .rightPart span{
@@ -183,6 +185,10 @@ span.name {
     justify-content: center;
     gap: 9rem;
   }
+  .skillChartStyle{
+    width:100%;
+    max-width:25rem;
+  }
 
   .section4{
     font-family: 'ProxiNova-Light';
@@ -204,7 +210,7 @@ span.name {
 .workCard {
   position: relative;
   max-width : 254px;
-  height : 180px;  
+  height : 133px;  
   background-color : #fff;
   margin : 30px 10px;
   
@@ -235,12 +241,13 @@ span.name {
 
 .workCard .workImage img {
   max-width : 100%;
-  height: 9.6rem;
-  border-radius : 15px;
+  height: auto; 
+  max-height: 6.7rem;
 }
 
  .workCard .workContent {
   /* font-family: 'ProxiNova-LightAlt'; */
+  font-family: monospace;
   position : relative;
   top : -140px;
   padding : 10px 15px;
@@ -280,7 +287,7 @@ span.name {
   gap: 7rem;
   justify-content: space-evenly;
   margin-top: 4rem; */
-  width: 1345px;
+  width: 100%;
 }
 
 .section5{
@@ -298,7 +305,7 @@ span.name {
   flex-direction: column;
    display: flex;
    align-items: center;
-   width: 60%;
+   width: 100%;
 }
 
 .sec5PartOne span {
@@ -308,15 +315,16 @@ span.name {
 }
 
 .sec5PartOne .connectText {
-  font-family: 'ProxiNova-Light';
+  font-family: sans-serif;
   font-size: 1.3rem;
   color: #838383;
   letter-spacing: 0.2rem;
-  line-height: 2.5rem;
+  line-height: 2rem;
+  text-align: center;
 }
 .sec5PartTwo {
-  width: 60%;
-  margin-top: 2.5rem;
+  width: 100%;
+  margin-top: 4.5rem;
   display: flex;
   flex-direction: column;
 }
@@ -330,18 +338,19 @@ span.name {
 
 .sec5PartThree {
   margin-top: 3.8rem;
-  width: 60%;
+  width: 100%;
 }
 
 .sec5PartThree{
   display: flex;
+  justify-content: space-evenly;
 }
 
 .sec5PartThreeCopywrite{
-  width: 30%;
   display: flex;
-    flex-direction: column;
-    gap: 1rem;
+  flex-direction: column;
+  max-width: 20rem;
+  gap: 1rem;
 }
 
 .sec5PartThreeCopywrite .class1{
@@ -358,11 +367,10 @@ span.name {
 }
 
 .sec5PartThreeName{
-  width: 30%;
-  margin-left: 4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 20rem;
 }
 
 .sec5PartThreeName .class3{
@@ -370,21 +378,23 @@ span.name {
   font-size: 4rem;
   color: indianred;
   line-height: 4.1rem;
+  text-align: center;
 }
 
 .sec5PartThreeName .class4{
   font-family: sans-serif;
   letter-spacing: 0.1rem;
   line-height: 1.6;
+  text-align: center;
 }
 
 .sec5PartThreeMedia{
-  width: 34%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-content: flex-end;
   gap: 0.5rem;
+  max-width: 20rem;
 }
 
 .sec5PartThreeMedia .class5 {
@@ -393,6 +403,7 @@ span.name {
   color: #acacac;
   line-height: 1.6;
   font-size: 1.2rem;
+  text-align: center;
 }
 .sec5PartThreeMedia .class6 {
   gap: 1rem;
@@ -414,4 +425,97 @@ span.name {
   margin-top: 0px !important;
   position: relative !important;
   top: 2px !important;
+}
+
+.contactInfo{
+  font-family: sans-serif;
+    letter-spacing: 0.2rem;
+    font-weight: bolder;
+}
+
+
+@media (max-width: 640px) {
+  .numbersSection{
+    flex-direction: column;
+  }
+  .sec5PartOne {
+    span {
+      letter-spacing: 0rem;
+      font-size: 2.5rem;
+    }
+  }
+  
+}
+
+@media (max-width: 868px) {
+  .rightPart span {
+    font-size: 3rem;
+  }
+  span.name{
+    font-size: 2rem;
+  }
+  .bgImage{
+    display: none;
+  }
+  .sec5PartFourImg{
+    width: 100%;
+  }
+  .numbersSection{
+    gap: 2rem;
+  }
+  .aboutSection{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .rightPart{
+    align-items: center;
+  }
+  .sec5PartOne {
+    span {
+      font-size: 3rem;
+    }
+  }
+}
+@media(max-width: 1023px) {
+
+  span.name{
+    font-size: 4.5rem;
+  } 
+  .skillChart{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .sec5PartThree{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+  .sec5PartThree [class^="sec5PartThree"] {
+    width: 100%;
+    margin: 0px;
+  }
+  .sec5PartThreeCopywrite{
+    span{
+      text-align: center;
+    }
+  }
+
+}
+
+@media (max-width: 1500px) {
+  .skillChart{
+    gap: 3rem;
+  }
+  .skillChartStyle{
+    max-width: 17rem;
+  }
+}
+@media (max-width: 1736px) {
+  .skillChartStyle{
+    gap: 5rem;
+    max-width: 20rem;
+  }
 }
